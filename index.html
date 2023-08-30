@@ -1,0 +1,58 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=320,
+        height=480,
+        initial-scale=0.9,
+        minimum-scale=0.6,
+        maximum-scale=2.0,
+        user-scalable=yes" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+    <body>
+        <button id="login">ログイン</button>
+        <div id="header">
+
+        </div>
+        <div id="contents">
+            <div id="chat">
+                <div class="sb-side sb-side-left">
+                    <div class="assistant">こんにちは。</div>
+                </div>
+            </div>
+            
+
+            <div id="input">
+                <form onSubmit="return false">
+                    <div id="textdiv">
+                        <div id="textblock">
+                            <div id="textbottom">
+                                <label id="textlabel"><input type="text" name="text" id="text" autofocus size="60" /></label>
+                            </div>
+                            <input type="image" src="image/send.png" name="button" id="button" value="Click"/>
+                        </div>
+                        
+                        <span class="cp_sl06_highlight"></span>
+                        <span class="cp_sl06_selectbar"></span>
+                    </div>
+                </form>
+            </div>
+
+            <ul class="tab-area">
+                <li class="tab active">llama2</li>
+                <li class="tab">line_llm</li>
+                <li class="tab">東大_llm</li>
+            </ul>
+              
+        </div>
+
+        <div id="footer">
+        </div>
+
+        <script src="main_process.js"><!-- --></script>
+    </body>
+</html>
